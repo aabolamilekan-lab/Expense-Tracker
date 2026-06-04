@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Expense Tracker</h1>
+
+    <div class="form">
+      <input id="nameInput" type="text" placeholder="Expense name (e.g., Transport)" />
+      <input id="amountInput" type="number" placeholder="Amount (₦)" min="0" />
+      <button id="addBtn">Add Expense</button>
+    </div>
+
+    <div class="summary">
+      <span>Total: <strong id="totalDisplay">₦0.00</strong></span>
+      <span>Items: <strong id="countDisplay">0</strong></span>
+    </div>
+
+    <ul id="expenseList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
