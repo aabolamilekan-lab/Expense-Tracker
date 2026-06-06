@@ -22,10 +22,21 @@ body {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
-  font-size: 24px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 24px;
   color: #1a1a2e;
+}
+
+.header .greeting {
+  font-size: 13px;
+  color: #6b7280;
 }
 
 .form {
@@ -81,6 +92,36 @@ h1 {
 
 .summary strong {
   color: #1a1a2e;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  background: #f0f4ff;
+  border-radius: 10px;
+  padding: 14px 12px;
+  text-align: center;
+  border: 1px solid #dbeafe;
+}
+
+.dashboard-card .card-label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.dashboard-card .card-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e40af;
 }
 
 #expenseList {

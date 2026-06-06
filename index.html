@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expense Tracker</title>
+  <title>SpendWise</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>💰 Expense Tracker</h1>
+    <div class="header">
+      <h1>💰 SpendWise</h1>
+      <span class="greeting" id="greeting"></span>
+    </div>
 
     <div class="form">
       <input id="nameInput" type="text" placeholder="Expense name (e.g., Transport)" />
@@ -19,6 +22,21 @@
     <div class="summary">
       <span>Total: <strong id="totalDisplay">₦0.00</strong></span>
       <span>Items: <strong id="countDisplay">0</strong></span>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+      <div class="dashboard-card">
+        <span class="card-label">Average</span>
+        <span class="card-value" id="avgDisplay">₦0.00</span>
+      </div>
+      <div class="dashboard-card">
+        <span class="card-label">Highest</span>
+        <span class="card-value" id="highDisplay">₦0.00</span>
+      </div>
+      <div class="dashboard-card">
+        <span class="card-label">Lowest</span>
+        <span class="card-value" id="lowDisplay">₦0.00</span>
+      </div>
     </div>
 
     <ul id="expenseList"></ul>
